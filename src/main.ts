@@ -9,6 +9,7 @@ import 'primeicons/primeicons.css' // Icons are still imported as CSS
 const app = createApp(App)
 
 app.use(createPinia())
+
 app.use(PrimeVue, {
   theme: {
     preset: Aura,
