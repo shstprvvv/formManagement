@@ -1,11 +1,24 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import AccountForm from './components/AccountForm.vue'
+// This component will now only serve as a wrapper.
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <main>
+    <AccountForm />
+  </main>
 </template>
 
-<style scoped></style>
+<style>
+/* Resetting default styles and setting a base font */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+main {
+  padding: 2rem;
+}
+</style>
